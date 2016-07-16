@@ -1,0 +1,105 @@
+#wrapper {
+  padding: 10px;
+  background-color: white;
+}
+
+#homeworkheader a,
+#homeworkheader h1 {
+  display: inline-block;
+  font-size: 2em;
+  font-weight: bold;
+  color: #003c79;
+}
+
+#homeworkheader h1 {
+  float: right;
+  margin: 0;
+}
+
+#homeworkheader {
+  margin-bottom: 2em;
+}
+
+#homeworkheader>p {
+  color: green;
+  font-size: 1.5em;
+}
+
+#hwdates {
+  text-align: center;
+}
+
+.dates {
+  display: inline-block;
+  border: solid 1px;
+  padding: 4px 0px;
+}
+
+.dates h2,
+.dates p {
+  display: inline;
+  font-size: 1.5em;
+  color: blue;
+}
+
+.dates h2 {
+  margin-right: 0.5em;
+  background-color: lightgray;
+  padding: 5px 10px;
+}
+
+.dates p {
+  margin-right: 0.5em;
+  padding: 5px 10px;
+}
+
+.dates:first-child {
+  margin-right: 10%;
+}
+
+.dates:last-child {
+  margin-left: 10%;
+}
+
+#spec {
+  width: 90%;
+  margin: 1em auto 0;
+  border: solid 1px;
+  padding: 10px;
+}
+
+#spec>h2:first-child {
+  margin-top: 0;
+}
+
+#spec h2 {
+  color: #5a5955;
+  font-size: 1.5em;
+  border-bottom: 1px solid #bbb;
+}
+
+input[type="text"] {
+  max-width: 400px;
+  width: 70%;
+}
+
+textarea {
+  width: 90%;
+}
+
+input[type="button"] {
+  font-size: 1em;
+  width: 100px;
+  border-radius: 4px;
+  margin-top: 1em;
+}
+
+label,
+input[type="text"],
+input[type="button"]:first-child {
+  margin-right: 1em;
+}
+
+input[type="button"]:hover {
+  background-color: aquamarine;
+}

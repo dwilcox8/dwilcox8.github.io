@@ -1,0 +1,486 @@
+
+#search > h1,
+#search > h2 {
+    margin-left:-30px; }
+
+/* error */
+.t_main div.error {
+    margin: 1em 0; 
+    border: #f1b78f 1px solid; 
+    padding: 10px; 
+    background-color: #f9e2cb;
+    color: #cf0a00; }
+
+.search {
+    margin: 0; }
+
+.search ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+
+.search .search_col {
+    display: inline-block;
+    margin: 0;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    padding: 0; }
+
+.search_adv .search_col {
+    vertical-align: top;
+    margin: 0; }
+
+/* form elements */
+.search label {
+    display: block;
+    padding: 5px 0;
+    line-height: 1em;
+    font-weight: bold; }
+
+.search input,
+.search select {
+    width: auto;
+    margin: 0;
+    padding: 6px;
+    color: #2d2d2d;
+    font-size: 14px;
+    line-height: 1em;
+    vertical-align: top;
+    border: solid 1px #8e8e8e; 
+    border-right-color: #e1e1e1;
+    border-bottom-color: #e1e1e1;
+    border-radius: 3px;
+    box-shadow: none;
+    outline: none; }
+
+.search input:focus,
+.search select:focus {
+    background-color: #fefbcd; }
+
+.search input {
+    width: 306px; }
+
+.search select {
+    height: 31px;
+    width: 250px; }
+
+#search_q {
+    padding-left: 25px;
+    background-image: url('../images/header_sprite.gif');
+    background-position: -436px -109px;
+    background-repeat: no-repeat; }
+
+.search optgroup {
+    margin: 5px; }
+
+.search .search_btn {
+    position: relative;
+    width: auto;
+    overflow: visible; /* for IE */
+    height: 30px;
+    margin: 0;
+    padding: 4px 18px 4px 10px;
+    color: #fff !important;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    line-height: 20px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    vertical-align: top;
+    background: url('../images/go_sprite.gif') no-repeat 100% -4px #669f01;
+    border: 1px solid #659353;
+    border-bottom-color: #4f7240;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    cursor: pointer; }
+
+.search .search_btn:hover,
+.search .search_btn:active {
+    background-position: 100% -37px; }
+
+.search_adv .search_btn {
+    position: absolute;
+    top: 10px;
+    right: 10px; }
+
+html>/**/body .search .bull { /* hack to exclude IE6 and IE7 which also apply the negative indent to the text we WANT to see */
+    background: transparent url('/images/chrome/bullet_med_grey.gif') left center no-repeat;
+    text-indent: -9999px;
+    display: inline-block;
+    width: 8px; }
+
+
+
+
+
+
+
+
+
+
+/* * * * * * * * * * * * * * * * * *  
+
+$autocomplete
+
+* * * * * * * * * * * * * * * * * * */ 
+
+.ui-autocomplete {
+    font-size: 14px !important;
+    font-weight: bold !important;
+    color: #2d2d2d !important;
+    text-align: left;
+    background-color: #ffffff;
+    border: solid 1px #bababa !important; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: default; }
+
+.ui-menu {
+    padding: 0 !important; }
+
+.ui-corner-all {
+    border-radius: 0 !important; }
+
+.ui-state-hover {
+    margin: 0 !important;
+    font-weight: bold !important;
+    color: #2d2d2d !important;
+    background-color: #e6e6e6 !important;
+    background-image: none !important;
+    border: none 0 !important; }
+
+.ui-menu .ui-menu-item a {
+    padding: 8px !important;
+    padding-bottom: 9px !important;
+    line-height: 1em !important; }
+
+
+
+
+
+
+
+
+
+
+/* * * * * * * * * * * * * * * * * *  
+
+$results
+
+* * * * * * * * * * * * * * * * * * */ 
+
+.search_info {
+    margin-top: 1em;
+    border-top: 1px solid #bababa;
+    background-color: #e5e5e5;
+    padding: 10px;
+    font-size: 0.85em; }
+
+.search_info span {
+    font-weight: bold; }
+
+.search_results {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px; }
+
+.search_results ul {
+    list-style-type: none;
+    padding-left: 25px; }
+
+.search_results li {
+    margin: 1em 0; }
+
+.result div:first-child{
+    line-height: 1.4 }
+
+.search_results .description {
+    line-height: 1.3; }
+
+.search_results .doctype {
+    font-weight: bold; }
+
+.search_results .url {
+    color: #547730;
+    font-size: 0.85em; }
+
+.search_results .size {
+    /* removing this because I think it's just noise */
+    display: none;
+    visibility: hidden; }
+
+.search_results .relatedresults {
+    margin: 1em 0;
+    padding-left: 20px; }
+
+.search_results ul .relatedresults {
+    padding-left: 0px; }
+
+.search_results .relatedresults a {
+    background: transparent url('/images/chrome/bullet_med_blue.gif') no-repeat 100% 62%;
+    padding-right: 10px; }
+
+/* pagination */
+.search_more {
+    margin-top: 1em;
+    border-bottom: 1px solid #bababa;
+    background-color: #e5e5e5;
+    padding: 10px;
+    font-weight: bold; }
+
+.search_more a, .search_more .current {
+    display: inline-block;
+    padding: 2px 5px;
+    text-align: center; }
+
+.search_more .next {
+    padding-right: 10px;
+    background: transparent url('/images/chrome/bullet_med_blue.gif') no-repeat 100% 50%; }
+
+.search_more .previous {
+    margin-left: 5px;
+    padding-left: 10px;
+    background: transparent url('/images/chrome/bulletlt_med_blue.gif') no-repeat 0% 50%; }
+
+
+
+
+
+
+
+
+
+
+/* * * * * * * * * * * * * * * * * *  
+
+$advanced search
+
+* * * * * * * * * * * * * * * * * * */ 
+
+.search_adv {
+    position: relative;
+    margin-bottom: 20px;
+    border: 1px solid #b7c7d7;
+    padding: 10px 0; }
+
+.search_adv h2 {
+    float: left;
+    clear: both;
+    width: 110px;
+    margin: 0;
+    padding: 5px;
+    color: #000;
+    font-size: 14px;
+    line-height: 20px; }
+
+.search_adv fieldset {
+    margin: -10px 0 15px 0;
+    border: 0;
+    padding: 10px 0 1px 0;
+    background-color: #c6dcf3; }
+
+.search_row {
+    min-height: 30px;
+    margin-left: 120px;
+    margin-bottom: 15px; }
+
+.search_row label {
+    display: inline-block;
+    margin-right: 10px;
+    line-height: 20px;
+    font-weight: normal; }
+
+.search_row h2 > label {
+    width: auto;
+    padding: 0;
+    font-weight: bold; }
+
+.search_row_gen label {
+    width: 240px; }
+
+.search_row input,
+.search_row select {
+    width: auto;
+    margin-right: 5px; }
+
+.search_row input[size="25"] {
+    width: 240px; }
+
+
+
+
+
+
+
+
+
+
+/* * * * * * * * * * * * * * * * * *  
+
+$clustering suggestions
+
+* * * * * * * * * * * * * * * * * * */ 
+
+#clustering {
+    overflow: hidden; _overflow: visible; zoom: 1; /* clearfix */
+    margin: 1em 0; }
+
+#clustering ul {
+    float: left;
+    width: 100%;
+    margin: 0; }
+
+#clustering li {
+    float: left;
+    box-sizing: border-box;
+    width: 49%;
+    margin: 0.5em 0 0 0;
+    padding-left: 10px;
+    background: transparent url('/images/chrome/bullet_med_grey.gif') left 5px no-repeat;
+    list-style-type: none; }
+
+
+
+
+
+
+
+
+
+
+/* * * * * * * * * * * * * * * * * *  
+
+$foo - grey boxes with links to tools
+
+* * * * * * * * * * * * * * * * * * */ 
+
+.foo {
+    margin: 20px 0 0 0;
+    padding: 10px;
+    border: #bababa 1px solid;
+    background: #e6e6e6;
+    box-sizing: border-box; }
+
+.foo p {
+    font-size: 14px; }
+
+.foo p:first-child {
+    margin-top: 0; }
+
+.foo ul {
+    margin: 1em 0em;
+    padding: 2px 0 0 40px; /* without the padding-top IE places the first bullet in the list at the height corrected by the vertical-align below, too high for us */
+    list-style-image: url('/images/chrome/fancylist.gif'); }
+
+.foo li {
+    margin-top: 0.5em; }
+
+.foo li:first-child {
+    margin-top: 0; }
+
+/* To raise bullets in Firefox to height of IEs */
+.foo li:first-line {
+    vertical-align: -10%; }
+
+.col1 {
+    width: 45%; }
+
+.foo .reset {
+    margin-top: -4.6em; }
+
+.col2 {
+    width: 45%;
+    margin-left: 50%; }
+
+
+
+
+
+
+
+
+
+
+/* * * * * * * * * * * * * * * * * *  
+
+$media queries
+
+* * * * * * * * * * * * * * * * * * */ 
+
+/* responsive styles up to 960px, includes resets to make elements fluid */
+@media only screen and (max-width: 60em) {
+
+    #search > h1,
+    #search > h2 {
+      margin-left: 0; }
+
+    #search,
+    #search * {
+        box-sizing: border-box; }
+
+    #search {
+        overflow: hidden; }
+    
+    #search .search input {
+        width: auto;
+        max-width: 20.71428571428571em; /* 290px / 14px */ }
+
+    #search .search_results {
+        word-wrap: break-word; }
+
+    #search #clustering li {
+        float: none; }
+
+    #search .foo li { 
+        width: 80%; }
+
+    #search .foo .reset { 
+        margin-top: 0.5em; }
+
+    #search .foo .col2 { 
+        margin-left: 0; }
+
+    #search br { 
+        display: none;
+        visibility: hidden; }    
+
+    .search_adv {
+       margin: 0;
+       padding-top: 0;
+       padding-right: 1em; /* 16px */
+       padding-bottom: 3em; /* 48px */
+       padding-left: 1em; /* 16px */ }
+
+    .search_adv fieldset {
+       margin: 0 -1em;
+       padding: 1em; /* 16px */ }
+    
+    .search_adv h2 {
+        float: none;
+        width: auto;
+        padding: 0; }
+
+    #search .search_adv fieldset > h2 {
+        margin-top: 0.25em; }
+    
+    .search_adv .search_row {
+        margin-left: 0; }
+    
+    .search_adv select {
+        width: 15.71428571428571em; /* 220px / 14px */ }
+        
+    .search_adv #as_ft,
+    .search_adv #as_dt {
+        width: auto;
+        margin-bottom: 0.28571428571429em; /* 4px / 14px */ }
+    
+    .search_adv i {
+        display: inline-block; }    
+    
+    .search_adv .search_btn {
+        top: auto;
+        right: 1em;
+        bottom: 1em; }
+
+}
+

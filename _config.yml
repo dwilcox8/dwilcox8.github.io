@@ -2,7 +2,7 @@
 title: DAN WILCOX
 #email: your-email@domain.com
 url: https://dwilcox8.github.io/
-#url: https://localhost:4006/
+#url: https://localhost:4000/
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 skills: "Computer Systems Engineer - Web Developer"
 meta_author: Wilcox Dan 
@@ -32,10 +32,10 @@ color:
 
 # Footer settings
 footer:
-  copyright: Dan Wilcox 
-  location: Vancouver, BC
+  copyright: Dan Wilcox - Freelancer theme
+  location: 
   social: Around the Web
-  credits: Freelancer theme
+  credits: 
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
@@ -49,6 +49,8 @@ social:
   #  url: http://bitbucket.org/jekyll
   - title: github
     url: http://github.com/dwilcox8
+  - title: linkedin
+    url:  http://www.linkedin.com/in/dan-wilcox-5652074b/
 
 
 # Credits content

@@ -1,0 +1,317 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+@font-face{
+    font-family: BebasNeue;
+    src: url(../font/BebasNeue.otf);
+}
+
+.navbar-fixed-top {
+  border: 0;
+
+}
+
+.navbar .may-hide {
+    display:inline-block;
+    opacity:1;
+    transform:translate(0px, 0px);
+    transition:all 0.15s ease 0.1s;
+}
+
+.navbar-inverse {
+    background-color: #3E3E3E;
+    padding: 0;
+}
+
+.navbar-inverse p {
+    color: white;
+    padding: 15px;
+    font-size: 12px;
+    font-weight: 200;
+    border: 0;
+    padding-left: 10px;
+    line-height: .25;
+    margin: 0;
+    width:inherit;
+
+}
+
+.navbar li:last-child {
+    background-color: #2251A3;
+}
+.navbar li:last-child img {
+    margin-left: 10px;
+}
+
+.navbar-brand {
+	font-family: BebasNeue, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+	font-size: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+ul.nav.navbar-nav.navbar-right {
+    text-align: center;}
+
+/*
+ * backtop button
+ */
+
+#backtop {
+position: fixed;
+left:auto;
+right: 10px;
+top:auto;
+bottom: 40px;
+outline: none;
+overflow:hidden;
+color:#fff;
+text-align:center;
+background-color:#3E3E3E;
+height:40px;
+width:40px;
+line-height:40px;
+font-size:14px;
+border-radius:2px;
+cursor:pointer;
+transition:all 0.3s linear;
+z-index:999999;
+
+opacity:.7;
+display:none;
+        }
+        #backtop:hover {
+            background-color:#27CFC3;
+        }
+        #backtop.mcOut {
+            opacity:0;
+        }
+/*
+ * Footer
+ */
+
+
+footer {
+    float:left; 
+    position:fixed;
+    width: 100%;
+    bottom: 0px;
+    z-index: 10;
+    
+
+}
+.footer, .push {
+    height: 155px; /* .push must be the same height as .footer */
+}
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+.navbar-form{
+display:none;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+
+@media (min-width: 1065px) {
+  .navbar-form {
+    display:inline;
+  }
+
+
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+/*
+ * BCIT Theme
+ */
+
+body{
+  background-color: #aaa;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+  color: #003c79;
+  font-size: 2em;
+  /*margin-left: -30px;*/
+}
+
+h2{
+  color: #5a5955;
+  font-size: 1.5em;
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 5px;
+}
+
+h3{
+  font-size: 1.25em;
+}
+
+a:visited, a[href]:visited{
+  color: #2960a7;
+}
+
+p{
+  color: #2d2d2d;
+  
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+.main{
+  background-color: #aaa;
+}
+
+#maincont{
+ background-color: #fff; 
+ padding: 10px;
+}
+
+
+/*** Dan's Additions ***/
+
+.jumbotron{
+  
+  max-width: 1400px;
+}
+
+.jumbotron p{
+    font-size: 14px;
+}
+
+.home{
+  background-color: #fff;
+}
+
+.class-links{
+  margin-bottom: 30px;
+  /*font-family: 'Oswald','HelveticaNeue-CondensedBold','Helvetica Neue',Helvetica,sans-serif;*/
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+
+.class-list{
+  text-align: center;
+  border: 1px solid black;
+  margin: 10px 5px;
+ 
+}
+
+.active-class{
+   background-color: #2553a1;
+}
+
+.active-class:hover{
+  background-color: white;
+  
+
+}
+
+.active-class:hover h2, .active-class:hover p{
+  color: #2553a1;
+}
+
+.active-class h2, .active-class p{
+  color: white;
+}
+
+#header-home{
+  color: black;
+  text-align: center;
+  font-size: 36px;
+}
+
+#proto-cont{
+	margin-bottom: 30px;
+}

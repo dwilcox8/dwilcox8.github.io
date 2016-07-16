@@ -1,0 +1,110 @@
+body {
+	color: #333;
+	background: #fff;
+	font-size: 10pt;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-weight: normal;
+}
+
+a {
+	color: #e60;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 12pt;
+}
+
+
+#banner {
+	margin: 0;
+	padding: 0;
+	background: #fff;
+}
+#banner h1 {
+	font-size: 10pt;
+	font-weight: normal;
+	font-family: verdana, arial, helvetica, sans-serif;
+	color: #111;
+}
+
+#titlebar {
+	font-size: 12pt;
+	font-weight: bold;
+	font-family: verdana, arial, helvetica, sans-serif;
+	color: #111;
+	margin: 0;
+	padding: 0px 0px 10px 0px;
+	background: #fff;
+}
+
+#maincont {
+	color: #334;
+	background: #fff;
+	margin: 0;
+	padding: 0;
+	width: 95%;
+	line-height: 140%;
+}
+#maincont h1 {
+	font-size: 12pt;
+	margin: 8px 0px 3px 0px;
+	padding: 10px 33px;
+	font-family: verdana, arial, helvetica, sans-serif;
+	color: #111;
+	border: 1px solid #bbb;
+}
+#maincont p {
+	margin: 5px 0px;
+}
+#maincont a {
+	text-decoration: none;
+	color: #e50;
+	font-size: 10pt;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-weight: bold;
+
+}
+
+#rightcont {
+display: none;
+}
+
+#docbox {
+	background: #fff;
+	margin: 0;
+	padding: 0;
+	
+}
+
+.contblock {
+	margin: 0px 0px 0px 30px;
+	padding: 3px 5px;
+	background: #fff;
+}
+
+h2 {
+	margin: 8px 0px 3px 30px;
+	padding: 3px 21px;
+	font-size: 10pt;
+	color: #111;
+	border: 1px dashed #bbb;
+}
+
+a:link:after, a:visited:after {
+	content: " (" attr(href) ") ";
+	font-size: 10pt;
+	font-weight: normal;
+	text-decoration: none;
+	}
+
+ul {
+	margin: 0px 0px 8px 0px;
+	padding: 0px 0px 0px 35px;
+}
+
+#footer {
+display: none;
+}
+
+
+
+
