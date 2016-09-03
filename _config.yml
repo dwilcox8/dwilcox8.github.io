@@ -1,5 +1,5 @@
 # Site settings
-title: DAN WILCOX
+title: Dan Wilcox - Portfolio
 #email: your-email@domain.com
 url: https://dwilcox8.github.io/
 #url: https://localhost:4000/
@@ -29,11 +29,12 @@ color:
   primary-rgb: "24,288,156" #"128,179,255"
   secondary: 2c3e50 #FD6E8A
   secondary-dark: 233140 #A2122F
+  skill-set: E86612 #ff7821
 
 # Footer settings
 footer:
   copyright: Dan Wilcox
-  location: 
+  location: Vancouver, BC
   social: Around the Web
   credits: Freelancer Theme 
 
