@@ -22,8 +22,8 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    /*color: #{{ site.color.primary }};*/
-    color: #D5104F;
+    color: #{{ site.color.skill-set }};
+    /*color: #D5104F; */
     text-decoration: none;
 }
 
@@ -67,7 +67,8 @@ hr.star-light {
 
 hr.star-light:after {
     color: #fff;
-    background-color: #{{ site.color.primary }};
+    /*background-color: #{{ site.color.primary }};*/
+    background-color: #036266;
 }
 
 hr.star-dark {
@@ -95,7 +96,8 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #{{ site.color.primary }};
+    /*background: #{{ site.color.primary }}; */
+    background: #036266;
 }
 
 header .container {
@@ -194,7 +196,8 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #{{ site.color.primary }};
+    /*background: #{{ site.color.primary }};*/
+    background: #036266;
 }
 
 section.skills{
