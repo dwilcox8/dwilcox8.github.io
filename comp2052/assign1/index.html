@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>jQM Complex Demo</title>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+        <script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyAISo3kgvIoPErEHzce-ZPsd5wRtM0LJFU"></script>
+        <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="assign1.css">
+    </head>
+    
+    <body>
+        <div data-role="page" id="index">
+            <div data-theme="b" data-role="header">
+                 <h3>BCIT Campuses</h3>
+            </div>
+
+            <div data-role="content" id="content" data-theme="a">
+                <form>
+                    <div class="ui-field-contain">
+                        <label for="bcit-campus">Select BCIT Campus</label>
+                        <select name="bcit-campus" id="bcit-campus">
+                            <option value="burnaby">Burnaby Campus</option>
+                            <option value="downtown">Downtown Campus</option>
+                            <option value="marine">Marine Campus</option>
+                            <option value="aerospace">Aerospace Technology Campus</option>
+                            <option value="annacis">Annacis Island Campus</option>
+                        </select>
+                    </div>
+                </form>
+
+                <div id="map_canvas">
+                    
+                </div>
+
+
+                <div id="campus-info"></div>
+                
+            </div>
+
+            <div data-theme="b" data-role="footer" data-position="fixed">
+                 <h3>Dan Wilcox</h3>
+            </div>
+        </div>
+
+        <script src="maps.js"></script>
+    </body>
+
+</html>
