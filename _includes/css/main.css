@@ -476,12 +476,11 @@ footer .footer-below {
     background-color: #{{ site.color.secondary-dark }} !important;
 }
 
-/* Fix modal mouse wheel issues */
-/* https://github.com/twbs/bootstrap/issues/16297 */
-.modal.fade.in {
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
-}
+/******
+* 
+* All of the custom stylings go here
+* 
+******/
 
 .skills{
     font-size: 22px;
@@ -492,9 +491,18 @@ footer .footer-below {
     padding-bottom: 10px;
 }
 
+@media (max-width: 990px){
+
+    .responsive-image {
+        margin-bottom: 20px;
+    }
+}
+
 .responsive-image {
-    width: 100%;
+    min-width: 50%;
+    max-width: 100%;
     height: auto;
+    border: 1px solid #3E502C;
 }
 
 .content-section-a {
@@ -508,6 +516,13 @@ footer .footer-below {
     border-bottom: 1px solid #e7e7e7;
 }
 
+.content-section-c {
+    padding: 50px 0;
+    background-color: #e7e7e7;
+    border-top: 1px solid #c6c6c6;
+    border-bottom: 1px solid #c6c6c6;
+}
+
 .img-left {
     float: left;
     margin-right: 25px;
@@ -516,4 +531,20 @@ footer .footer-below {
 
 .img-border {
     border: #999999 solid 1px;
+}
+
+
+
+/******
+* 
+* Project statuses
+* 
+******/
+
+.complete {
+    color: green;
+}
+
+.in-progress {
+    color: orange;
 }

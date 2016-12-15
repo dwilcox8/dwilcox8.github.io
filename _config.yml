@@ -35,7 +35,7 @@ footer:
   copyright: Dan Wilcox
   location: Vancouver, BC
   social: Around the Web
-  credits: Freelancer Theme 
+  #credits: Freelancer Theme 
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
